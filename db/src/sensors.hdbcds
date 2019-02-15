@@ -1,0 +1,12 @@
+namespace mta_iot_gen.db;
+
+context sensors {
+   type KeyType : Integer;
+
+   entity temp {
+      key tempId  : KeyType generated always as identity(start with 2 increment by 1);
+          tempVal : Integer      not null;
+          ts      : UTCTimestamp not null;
+          created : UTCTimestamp not null;
+   };
+};

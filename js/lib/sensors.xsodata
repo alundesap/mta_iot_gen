@@ -1,0 +1,3 @@
+service {
+	"mta_iot_gen.db::sensors.temp" as "temp";
+}
